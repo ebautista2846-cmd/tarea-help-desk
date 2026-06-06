@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Help Desk - Tickets Registrados</title>
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.svg" alt="Logotipo del sistema Help Desk" width="160" height="80">
+    <h1>Tickets Registrados</h1>
+    <p>Listado organizado de incidentes ingresados al sistema.</p>
+  </header>
+
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="reportar.html">Reportar incidente</a></li>
+      <li><a href="tickets.html" aria-current="page">Tickets registrados</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section aria-labelledby="lista-tickets">
+      <h2 id="lista-tickets">Listado de tickets</h2>
+      <p>La siguiente tabla muestra ejemplos de incidentes registrados en el sistema Help Desk.</p>
+
+      <table>
+        <caption>Incidentes registrados por el área de soporte</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Título</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Prioridad</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HD-001</td>
+            <td>Falla de conexión a internet</td>
+            <td>Red</td>
+            <td>Alta</td>
+            <td>Abierto</td>
+            <td>2026-05-20</td>
+          </tr>
+          <tr>
+            <td>HD-002</td>
+            <td>Equipo no enciende</td>
+            <td>Hardware</td>
+            <td>Alta</td>
+            <td>En proceso</td>
+            <td>2026-05-21</td>
+          </tr>
+          <tr>
+            <td>HD-003</td>
+            <td>Error al iniciar aplicación contable</td>
+            <td>Software</td>
+            <td>Media</td>
+            <td>Resuelto</td>
+            <td>2026-05-22</td>
+          </tr>
+          <tr>
+            <td>HD-004</td>
+            <td>Impresora sin respuesta</td>
+            <td>Hardware</td>
+            <td>Baja</td>
+            <td>Abierto</td>
+            <td>2026-05-23</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="estados">
+      <h2 id="estados">Estados utilizados</h2>
+      <article>
+        <h3>Abierto</h3>
+        <p>El incidente fue registrado y está pendiente de asignación.</p>
+      </article>
+      <article>
+        <h3>En proceso</h3>
+        <p>El equipo de soporte se encuentra revisando el caso.</p>
+      </article>
+      <article>
+        <h3>Resuelto</h3>
+        <p>El incidente fue atendido y solucionado.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema Help Desk. Proyecto académico de Desarrollo de Sistemas Informáticos.</p>
+    <address>Contacto: soporte@helpdesk.edu.ec</address>
+  </footer>
+</body>
+</html>

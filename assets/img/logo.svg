@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="80" viewBox="0 0 160 80" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Logo del sistema Help Desk</title>
+  <desc id="desc">Icono simple de soporte tecnico con las letras HD.</desc>
+  <rect x="8" y="8" width="144" height="64" rx="10" fill="none" stroke="black" stroke-width="4"/>
+  <text x="80" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="32">HD</text>
+</svg>

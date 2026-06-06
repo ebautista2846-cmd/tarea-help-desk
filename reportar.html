@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Help Desk - Reportar Incidente</title>
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.svg" alt="Logotipo del sistema Help Desk" width="160" height="80">
+    <h1>Reportar Incidente</h1>
+    <p>Formulario para ingresar una solicitud de soporte técnico.</p>
+  </header>
+
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="reportar.html" aria-current="page">Reportar incidente</a></li>
+      <li><a href="tickets.html">Tickets registrados</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section aria-labelledby="formulario-incidente">
+      <h2 id="formulario-incidente">Ingreso de incidente</h2>
+      <p>Complete los datos solicitados para registrar el incidente en el sistema.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos generales del incidente</legend>
+
+          <p>
+            <label for="titulo">Título del incidente:</label><br>
+            <input type="text" id="titulo" name="titulo" placeholder="Ejemplo: No hay conexión a internet" required>
+          </p>
+
+          <p>
+            <label for="categoria">Categoría:</label><br>
+            <select id="categoria" name="categoria" required>
+              <option value="">Seleccione una categoría</option>
+              <option value="red">Red</option>
+              <option value="hardware">Hardware</option>
+              <option value="software">Software</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de prioridad</legend>
+
+          <p>
+            <input type="radio" id="prioridad-alta" name="prioridad" value="alta" required>
+            <label for="prioridad-alta">Alta</label>
+          </p>
+
+          <p>
+            <input type="radio" id="prioridad-media" name="prioridad" value="media">
+            <label for="prioridad-media">Media</label>
+          </p>
+
+          <p>
+            <input type="radio" id="prioridad-baja" name="prioridad" value="baja">
+            <label for="prioridad-baja">Baja</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Descripción detallada</legend>
+
+          <p>
+            <label for="descripcion">Describa el problema:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="8" cols="60" placeholder="Explique cuándo inició el problema, qué equipo o servicio está afectado y cualquier mensaje de error observado." required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar reporte</button>
+          <button type="reset">Limpiar formulario</button>
+        </p>
+      </form>
+    </section>
+
+    <section aria-labelledby="ayuda">
+      <h2 id="ayuda">Recomendaciones para el reporte</h2>
+      <article>
+        <h3>Información clara</h3>
+        <p>Incluya datos precisos para facilitar el diagnóstico del incidente por parte del equipo de soporte.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema Help Desk. Proyecto académico de Desarrollo de Sistemas Informáticos.</p>
+    <address>Contacto: soporte@helpdesk.edu.ec</address>
+  </footer>
+</body>
+</html>
